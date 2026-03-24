@@ -31,6 +31,18 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico?">
+    <style>
+      .resume-wrap {
+        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease, border-color 0.35s ease;
+      }
+      .resume-wrap:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 56px -12px rgba(28, 81, 223, 0.22);
+      }
+      .resume-wrap.cert-aws {
+        border-left: 4px solid #1C51DF;
+      }
+    </style>
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -79,39 +91,36 @@
 	    </div>
     </section>
 
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <section class="ftco-about ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
-    		<div class="row d-flex">
-    			<div class="col-md-6 col-lg-5 d-flex">
-    				<div class="img-about img d-flex align-items-stretch">
-    					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/bg_2.png);">
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">About</h1>
-		            <h2 class="mb-4">About Me</h2>
-		            <p align="justify">My lifelong fascination with technology has fueled my passion and commitment to this ever-evolving field. From my early years, I've been captivated by its possibilities, and this drive has only grown stronger.<br> I thrive on challenges, viewing them as opportunities for learning and growth. Whether it's mastering coding or staying current with emerging tech trends, my unwavering enthusiasm and quick learning have been instrumental in my tech journey.
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">About</h1>
+            <h2 class="mb-4">About Me</h2>
+          </div>
+        </div>
+    		<div class="row justify-content-center">
+    			<div class="col-md-10 text-center">
+    				<div class="heading-section ftco-animate">
+		            <p>I’ve always been naturally drawn to technology and how it shapes the world around us. What started as simple curiosity at a young age has grown into a genuine passion and a clear direction for my future.
+
+						I enjoy tackling challenges and see them as a chance to learn something new. Whether it’s improving my coding skills or exploring new technologies, I stay motivated, adapt quickly, and keep pushing myself to grow.						
 					</p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span>ADNAN EL OUADGHIRI</span></li>
-		            	<li class="d-flex"><span>Date of birth:</span> <span>June 6th, 1999</span></li>
-		            	<li class="d-flex"><span>Address:</span> <span>Tangier, Morocco</span></li>
-		            	<li class="d-flex"><span>Email:</span> <span>adnan.elouadghiri@gmail.com</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>+212-696455634</span></li>
+		            	<li class="d-flex justify-content-center"><span>Name:</span> <span>ADNAN EL OUADGHIRI</span></li>
+		            	<li class="d-flex justify-content-center"><span>Date of birth:</span> <span>June 6th, 1999</span></li>
+		            	<li class="d-flex justify-content-center"><span>Address:</span> <span>Tangier, Morocco</span></li>
+		            	<li class="d-flex justify-content-center"><span>Email:</span> <span>adnan.elouadghiri@gmail.com</span></li>
+		            	<li class="d-flex justify-content-center"><span>Phone: </span> <span>+212-696455634</span></li>
 		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+	          <div class="counter-wrap ftco-animate d-flex justify-content-center mt-md-3">
               <div class="text">
-				<p><a href="Adnan-El ouadghiri-Resume-18-10-2023-03-26-14.pdf"  download="adnan-el-ouadghiri-Resume.pdf" class="btn btn-primary py-3 px-4">Download CV</a></p>
+				<p class="mb-0"><a href="Adnan-El ouadghiri-Resume-18-10-2023-03-26-14.pdf"  download="adnan-el-ouadghiri-Resume.pdf" class="btn btn-primary py-3 px-4">Download CV</a></p>
 			</div>
 	          </div>
-	        </div>
-        </div>
+		        </div>
+    			</div>
+    		</div>
     	</div>
     </section>
 	<section class="ftco-section ftco-project" id="projects-section">
@@ -120,7 +129,6 @@
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">My Projects</h2>
-            <p>Some of the projects I built</p>
           </div>
         </div>
     		<div class="row">
@@ -143,27 +151,13 @@
     				</div>
   				</div>
 
-    			<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/Wea.png);">
+    			<div class="col-md-12">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/wordchain.png);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
-	    					<h3><a href="https://frolicking-torte-7b4b28.netlify.app/" target="_blank">Weathery - Weather App</a></h3>
-	    					<span>Technologies <br>React js, API Integration, HTML, CSS</span>
+	    					<h3><a href="https://wordchain.dev" target="_blank" rel="noopener noreferrer">Wordchain.dev</a></h3>
+	    					<span>Multiplayer online game</span>
 	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="row">
-    					<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project2.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center p-4">
-									<h3><a href="https://github.com/liviathann/Living_ChatGpt" target="_blank">Talking Chat GPT</a></h3>
-									<span> Technologies <br> Python, OpenAI API, Vosk Model</span>
-								</div>
-							</div>
-	    				</div>
-
     				</div>
     			</div>
 				<div class="col-md-8">
@@ -189,7 +183,6 @@
 	  <div class="col-md-12 heading-section text-center ftco-animate">
 		  <h1 class="big big-2">Skills</h1>
 		<h2 class="mb-4">My Skills</h2>
-		<p>Mastering code to craft seamless digital experiences, blending creativity with precision</p>
 	  </div>
 	</div>
 			<div class="row">
@@ -447,6 +440,12 @@
     					<span class="position">FreeCodeCamp</span>
     					<p class="mt-4">Successfully completed the JavaScript Algorithms and Data Structures certification, demonstrating strong proficiency in JavaScript and expertise in implementing complex algorithms and data structures.</p>
     				</div>
+					<div class="resume-wrap ftco-animate cert-aws">
+    					<span class="date">2023</span>
+    					<h2>AWS Essentials</h2>
+    					<span class="position">Amazon Web Services</span>
+    					<p class="mt-4">Earned the AWS Essentials credential, covering core cloud concepts, foundational services, security basics, and best practices for building and operating workloads on AWS.</p>
+    				</div>
     			
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2022-2023</span>
@@ -562,7 +561,10 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About</h2>
-              <p align="justify">I'm a creative genius with an insatiable thirst for knowledge.<br>Ever since I was a little kid, I've been captivated by the world of software development.<br>My enthusiasm for learning is matched only by my dedication to mastering the craft.<br>I thrive on challenges and approach each one as an opportunity to expand my skills</p>
+              <p align="justify">I’m a naturally curious and creative person with a strong desire to keep learning. From a young age, I’ve been fascinated by software development and the possibilities it offers.
+
+				Over time, that interest has grown into a real commitment to improving my skills. I enjoy taking on challenges and see each one as a chance to learn, grow, and become better at what I do.
+				</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
               </ul>
             </div>
